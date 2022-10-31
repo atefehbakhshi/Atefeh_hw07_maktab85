@@ -1,10 +1,17 @@
 'use strict'
-function arr(...argument) {
-    let mergedArray = [];
-    argument.map(item => mergedArray.push(...item));
+// function sort(...argument) {
+//     let mergedArray = [];
+//     argument.map(item => mergedArray.push(...item));
+//     let sortedArray = mergedArray.sort((a, b) => b - a);
+//     return sortedArray
+// };
+
+// console.log(sort([1, 2], [3, 40], [5, 6]));
+
+function sort(...argument) {
+    let mergedArray = argument.flat();
     let sortedArray = mergedArray.sort((a, b) => b - a);
     return sortedArray
-
 };
 
-console.log(arr([1, 2], [3, 40], [5, 6]));
+console.log(sort([1, 2], [100, 40], [5, 6]));
