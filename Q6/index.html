@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Q6</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Student Registeration Form</h1>
+        <hr>
+        <div class="user-info">
+            <p id="user-firstname"></p>
+            <p id="user-middlename"></p>
+            <p id="userlastname"></p>
+            <p id="user-course"></p>
+            <p id="user-gender"></p>
+            <p id="user-phone"></p>
+            <p id="user-address"></p>
+            <p id="user-email"></p>
+        </div>
+        <form onsubmit="return sendForm(event)" id="form">
+            <div class="form-inputs">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" placeholder="Firstname" pattern="[A-Za-z]{2,20}" required>
+            </div>
+            <div class="form-inputs">
+                <label for="middlename">Middlename</label>
+                <input type="text" id="middlename" placeholder="Middlename" pattern="[A-Za-z]{2,20}" required>
+            </div>
+            <div class="form-inputs">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" placeholder="Lastname" pattern="[A-Za-z]{2,20}" required>
+            </div>
+            <div class="course">
+                <label for="course" id="course">Course:</label>
+                <select name="course" id="course" required>
+                    <option value="React">React</option>
+                    <option value="Java-Script">Java Script</option>
+                </select>
+            </div>
+            <div class="form-inputs">
+                <label for="gender">Gender:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Male</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="form-inputs">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="+91" pattern="[0-9]{2}" required>
+            </div>
+            <div class="form-inputs">
+                <input type="text" id="phoneNo" placeholder="phone no." pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-inputs">
+                <label for="address">Current Address:</label>
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Current Address"
+                    pattern="[A-Za-z]{,200}" required></textarea>
+            </div>
+            <div class="form-inputs">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+            </div>
+            <div class="form-inputs">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+            </div>
+            <div class="form-inputs">
+                <label for="re-password">Re-type Password</label>
+                <input type="password" id="rePassword" placeholder="Re-type Password" required>
+            </div>
+            <button class="submit-btn">Register</button>
+        </form>
+    </div>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
