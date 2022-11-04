@@ -5,14 +5,12 @@
 }
 
 .container {
-    /* width: 100%; */
     background-color: rgb(245, 245, 245);
-    /* padding: 32px; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ********************* */
-/*         Hedear        */
+/*Hedear*/
 /* ********************* */
 
 header {
@@ -43,7 +41,7 @@ li {
 }
 
 /* ********************* */
-/*         Hero        */
+/*Hero*/
 /* ********************* */
 .hero {
     display: flex;
@@ -78,27 +76,36 @@ li {
 }
 
 /* ********************* */
-/*         Video        */
+/*Video*/
 /* ********************* */
 .product-introduction {
     display: none;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
+    padding: 32px;
     margin-bottom: 32px;
 }
 
-.product-introduction h1 {
-    text-align: center;
+.product-summary {
+    width: 30%;
+}
+
+.product-image {
+    max-width: 350px;
+}
+
+.product-name {
+    font-size: 20px;
+    margin: 0 0 8px 0;
 }
 
 video {
-    padding: 16px;
-    max-width: 50%;
+    width: 70%;
+    max-width: 800px;
 }
 
 /* ********************* */
-/*      Filter Box       */
+/*Filter Box*/
 /* ********************* */
 .filter-box {
     display: flex;
@@ -121,6 +128,14 @@ video {
     border: 2px solid rgb(225, 225, 225);
 }
 
+#ram,
+#hard-disk {
+    background-color: #00a3ff;
+    text-align: center;
+    color: #fff;
+    padding: 8px 32px;
+}
+
 hr {
     background-color: #00a3ff;
     height: 4px;
@@ -129,7 +144,7 @@ hr {
 }
 
 /* ********************* */
-/*         Main          */
+/*Main*/
 /* ********************* */
 
 main {
